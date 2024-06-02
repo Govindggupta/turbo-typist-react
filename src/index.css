@@ -1,0 +1,44 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap');
+
+body {
+  font-family: 'Ubuntu Mono', monospace;
+  background-color: #2b2b2b;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.cursor::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -1px;
+  height: 100%;
+  width: 2.5px;
+  border-radius: 5px;
+  background-color: rgb(255, 251, 0);
+}
+
+@media (min-width: 640px) { 
+  .cursor::after {
+    width: 3.5px;
+    border-radius: 10px;
+  }
+}
+
+.paragraph-text span.correct {
+  color: white !important;
+}
+
+.paragraph-text span.incorrect {
+  color: rgb(255, 96, 96);
+}
+
+button:active {
+  cursor: pointer;
+  transform: scale(.97, .97);
+}
