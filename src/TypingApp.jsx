@@ -153,7 +153,7 @@ const TypingApp = () => {
       />
       <div className="text-center">
         <div className="flex items-center gap-3 mb-5 sm:mb-10 justify-center">
-          <img src="./src/assets/logo.svg" alt="" className="w-10" />
+          <div className="w-10"><img src="./src/assets/logo.svg" alt="" /></div>
           <h1 className="text-white font-semibold text-2xl sm:text-4xl" style={{ fontFamily: 'Ubuntu Mono' }}>Turbo-Typist</h1>
         </div>
         <div className="content-box">
